@@ -14,8 +14,7 @@
 
 <body>
 
-    <header>
-        <!-- NAV FROM BOOTSTRAP-->
+        <!-- START NAV-->
 
         <!-- logo -->
         <nav class="navbar navbar-expand-lg bg-light fixed-top">
@@ -34,7 +33,7 @@
 
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                
+
 
                 <form class="d-flex input-group">
                     <span class="input-group-text border-0 bg-light" id="search-addon">
@@ -59,75 +58,69 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
                     </li>
+            </div>
+            </ul>
+        </nav>
 
+        <!-- END NAV -->
+
+
+        
+        <div class="main-container d-flex">
+            <!-- /*START SIDEBAR*/ -->
+            <div class="side-bar col-lg-1 col-md-1 px-sm-3 px-0 bg-dark" id="side-nav">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 text-white min-vh-100">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sticky-offset"
+                        id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0 text-white">
+                                <i class="fa-solid fa-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <i class="fa-solid fa-chart-column"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Stats</span> </a>
+
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle text-white">
+                                <i class="fa-solid fa-signal"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Signals</span></a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="d-none d-sm-inline mx-1">Admin</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            </ul>
+            <!-- END SIDEBAR -->
 
-        </nav>
-    </header>
-
-    <body>
-
-        <!-- /*SIDEBAR FROM BOOTSTRAP*/ -->
-
-        <div class="row" id="body-row">
-            <div class="row flex-nowrap d-md-block ">
-                <div class="col-auto col-md-3 col-xl-2 px-sm-3 px-0 bg-dark">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 text-white min-vh-100">
-                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sticky-top sticky-offset"
-                            id="menu">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link align-middle px-0 text-white">
-                                    <i class="fa-solid fa-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#submenu1" data-bs-toggle="collapse"
-                                    class="nav-link px-0 align-middle text-white">
-                                    <i class="fa-solid fa-chart-column"></i> <span
-                                        class="ms-1 d-none d-sm-inline">Stats</span> </a>
-
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0 align-middle text-white">
-                                    <i class="fa-solid fa-signal"></i> <span
-                                        class="ms-1 d-none d-sm-inline">Signals</span></a>
-                            </li>
-
-
-
-                        </ul>
-                        <hr>
-                        <div class="dropdown pb-4">
-                            <a href="#"
-                                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-gear"></i>
-                                <span class="d-none d-sm-inline mx-1">Admin</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow"
-                                aria-labelledby="dropdownUser1">
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Sign out</a></li>
-                            </ul>
-                        </div>
-                    </div>
+            <!-- START CONTENT PAGE -->
+            <div class="content sticky-offset">
+                <div class="row">
+                    <div class="col-9">Boolean</div>
+                    <div class="col-3">125</div>
                 </div>
 
             </div>
+
+            <!-- END CONTENT PAGE -->
         </div>
-
-    </body>
-
-    <footer>
-
-
-    </footer>
 
 
     <!-- script -->
@@ -138,3 +131,6 @@
 </body>
 
 </html>
+
+
+
