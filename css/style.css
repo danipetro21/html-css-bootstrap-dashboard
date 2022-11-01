@@ -1,6 +1,14 @@
 
+/* ---------SIDEBAR RULES--------- */
 
 
+/* z-index minore per la sidebar in modo tale da matterla sotto la navbar */
+
+#side-nav{
+    z-index: 1;
+}
+
+/* offset superiore per la sidebar */
 
 .sticky-offset {
     position: relative;
@@ -8,9 +16,19 @@
     
 }
 
+/* --------CONTENT RULES-------- */
 
 
-.content{
-    min-height: 100vh;
+/* offset superiore e laterale */
+#dashboard{
+    position: relative;
     width: 100%;
+    top: 56px;
+
 }
+
+.size{
+    height: 150px;
+}
+
+
