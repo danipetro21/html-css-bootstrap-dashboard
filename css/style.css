@@ -3,6 +3,10 @@
 
 
 /* z-index minore per la sidebar in modo tale da matterla sotto la navbar */
+/* remove hover tag a */
+a{
+    pointer-events: none;
+}
 
 #side-nav{
     z-index: 1;
